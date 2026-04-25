@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service – UK Casino Picks",
-  description: "Terms of Service for ukcasinopicks.com – please read before using our site.",
+  description: "Terms of Service for ukcasinopicks.org – please read before using our site.",
   alternates: { canonical: "/terms" },
 };
 
@@ -37,7 +37,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">1. Acceptance of Terms</h2>
               <p>
-                By accessing and using <strong>ukcasinopicks.com</strong>, you accept and agree to be bound
+                By accessing and using <strong>ukcasinopicks.org</strong>, you accept and agree to be bound
                 by these Terms of Service. If you do not agree to these terms, please do not use our site.
                 This site is operated by UK Casino Picks.
               </p>
@@ -110,7 +110,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">7. Intellectual Property</h2>
               <p>
-                All content on ukcasinopicks.com, including text, graphics, logos, and design, is the
+                All content on ukcasinopicks.org, including text, graphics, logos, and design, is the
                 property of UK Casino Picks and is protected by applicable intellectual property laws. You
                 may not reproduce or redistribute any content without prior written permission.
               </p>
@@ -137,7 +137,7 @@ export default function TermsPage() {
               <h2 className="text-xl font-bold text-white mb-3">10. Contact</h2>
               <p>
                 For any queries regarding these Terms of Service, please contact UK Casino Picks via our
-                website at <strong>ukcasinopicks.com</strong>.
+                website at <strong>ukcasinopicks.org</strong>.
               </p>
             </section>
           </div>

@@ -3,7 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ukcasinopicks.com"),
+  metadataBase: new URL("https://ukcasinopicks.org"),
   title: "UK Casino Picks - Best Online Casinos UK 2026",
   description:
     "Compare the best UK online casinos in 2026. UKGC licensed, independently reviewed. Find exclusive bonuses, free spins, and top-rated casino sites.",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://ukcasinopicks.com",
+    url: "https://ukcasinopicks.org",
     siteName: "UK Casino Picks",
     title: "UK Casino Picks - Best Online Casinos UK 2026",
     description:

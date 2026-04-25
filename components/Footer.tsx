@@ -27,7 +27,7 @@ export default function Footer() {
             Play Responsibly
           </span>
           <Image
-            src="/18plus.png"
+            src="/18+.jpg"
             alt="18+ only"
             width={36}
             height={36}
@@ -42,7 +42,7 @@ export default function Footer() {
             aria-label="BeGambleAware"
           >
             <Image
-              src="/gambleaware.png"
+              src="/GambleAware.webp"
               alt="BeGambleAware"
               width={120}
               height={36}
@@ -58,7 +58,7 @@ export default function Footer() {
             aria-label="GamCare"
           >
             <Image
-              src="/gamcare.png"
+              src="/GamCare.svg"
               alt="GamCare"
               width={90}
               height={36}
@@ -67,15 +67,15 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://www.gamstop.co.uk"
+            href="https://www.gordonmoody.org.uk"
             target="_blank"
             rel="noopener noreferrer"
             className="opacity-80 hover:opacity-100 transition-opacity"
-            aria-label="GamStop"
+            aria-label="Gordon Moody"
           >
             <Image
-              src="/gamestop.png"
-              alt="GamStop"
+              src="/gordonmoody.png"
+              alt="Gordon Moody"
               width={80}
               height={36}
               className="object-contain"
@@ -123,21 +123,18 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="/privacy"
-                  className="text-xs transition-colors"
-                  style={{ color: "rgba(232,232,240,0.5)" }}
-                >
+                <Link href="/privacy" className="text-xs transition-colors" style={{ color: "rgba(232,232,240,0.5)" }}>
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/terms"
-                  className="text-xs transition-colors"
-                  style={{ color: "rgba(232,232,240,0.5)" }}
-                >
+                <Link href="/terms" className="text-xs transition-colors" style={{ color: "rgba(232,232,240,0.5)" }}>
                   Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-xs transition-colors" style={{ color: "rgba(232,232,240,0.5)" }}>
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -171,7 +168,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="section-divider mb-6" />
         <p className="text-center text-xs" style={{ color: "rgba(232,232,240,0.3)" }}>
-          © {year} ukcasinopicks.com. For informational purposes only. All rights reserved.
+          © {year} ukcasinopicks.org. For informational purposes only. All rights reserved.
         </p>
       </div>
     </footer>

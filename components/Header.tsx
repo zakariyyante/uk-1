@@ -8,8 +8,9 @@ import Link from "next/link";
 const navLinks = [
   { href: "#casinos", label: "Top Casinos" },
   { href: "#how-we-rank", label: "How We Rank" },
-  { href: "/privacy", label: "Privacy" },
+  { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {

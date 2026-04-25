@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy – UK Casino Picks",
-  description: "Privacy Policy for ukcasinopicks.com – how we collect, use, and protect your data.",
+  description: "Privacy Policy for ukcasinopicks.org – how we collect, use, and protect your data.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-bold text-white mb-3">1. Introduction</h2>
               <p>
                 UK Casino Picks (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) operates the website{" "}
-                <strong>ukcasinopicks.com</strong>. This Privacy Policy explains how we collect, use, disclose,
+                <strong>ukcasinopicks.org</strong>. This Privacy Policy explains how we collect, use, disclose,
                 and safeguard your information when you visit our website.
               </p>
             </section>
@@ -114,7 +114,7 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-bold text-white mb-3">8. Contact Us</h2>
               <p>
                 If you have questions about this Privacy Policy, please contact UK Casino Picks via our website
-                at <strong>ukcasinopicks.com</strong>. Operator: UK Casino Picks.
+                at <strong>ukcasinopicks.org</strong>. Operator: UK Casino Picks.
               </p>
             </section>
           </div>

@@ -65,12 +65,49 @@ body {
 
 /* Casino card glow */
 @keyframes casino-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(201, 168, 76, 0.1), 0 0 40px rgba(201, 168, 76, 0.05); }
-  50% { box-shadow: 0 0 30px rgba(201, 168, 76, 0.25), 0 0 60px rgba(201, 168, 76, 0.1); }
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(201,168,76,0.15),
+      0 8px 32px rgba(0,0,0,0.6),
+      0 0 40px rgba(201,168,76,0.06);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(201,168,76,0.35),
+      0 8px 40px rgba(0,0,0,0.7),
+      0 0 60px rgba(201,168,76,0.14);
+  }
 }
 
 .casino-glow {
-  animation: casino-glow 3s ease-in-out infinite;
+  animation: casino-glow 4s ease-in-out infinite;
+}
+
+/* Card top shine sweep */
+@keyframes card-shine {
+  0%   { transform: translateX(-100%) skewX(-15deg); }
+  100% { transform: translateX(400%) skewX(-15deg); }
+}
+
+.card-shine::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+  animation: card-shine 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Rank number shimmer */
+@keyframes rank-pulse {
+  0%, 100% { opacity: 0.06; transform: scale(1); }
+  50%       { opacity: 0.1;  transform: scale(1.04); }
+}
+
+.rank-bg {
+  animation: rank-pulse 4s ease-in-out infinite;
 }
 
 /* Pulse dot animation */

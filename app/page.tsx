@@ -20,28 +20,6 @@ export default function HomePage() {
       <main>
         {/* ── HERO ─────────────────────────────────────────── */}
         <section className="hero-bg relative overflow-hidden py-20 md:py-28 px-4">
-          {/* Decorative card suits */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
-          >
-            {["♠", "♥", "♦", "♣"].map((suit, i) => (
-              <span
-                key={suit}
-                className="suit-float absolute text-white select-none"
-                style={{
-                  fontSize: "clamp(80px, 15vw, 200px)",
-                  left: `${[10, 25, 65, 80][i]}%`,
-                  top: `${[5, 55, 10, 50][i]}%`,
-                  color: i % 2 === 0 ? "#c9a84c" : "#f5d27a",
-                  animationDelay: `${i * 1.5}s`,
-                }}
-              >
-                {suit}
-              </span>
-            ))}
-          </div>
-
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             {/* Badge pill */}
             <div className="badge-pill mx-auto mb-6 inline-flex">
@@ -107,8 +85,26 @@ export default function HomePage() {
 
             {/* Cards grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {regularCasinos.map((casino) => (
-                <CasinoCard key={casino.id} casino={casino} isOnline={true} />
+              {regularCasinos.map((casino, i) => (
+                <div key={casino.id} className="flex flex-col">
+                  {/* Badge above card */}
+                  {casino.badge ? (
+                    <div className="flex justify-center mb-2">
+                      <span
+                        className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide"
+                        style={{
+                          background: "linear-gradient(135deg, #c9a84c, #f5d27a)",
+                          color: "#0f0f1a",
+                        }}
+                      >
+                        {casino.badge}
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="mb-2 h-6" />
+                  )}
+                  <CasinoCard casino={casino} isOnline={true} rank={i + 1} />
+                </div>
               ))}
             </div>
 
@@ -257,7 +253,7 @@ export default function HomePage() {
                 Play Responsibly
               </span>
               <Image
-                src="/18plus.png"
+                src="/18+.jpg"
                 alt="18+ only"
                 width={36}
                 height={36}
@@ -271,7 +267,7 @@ export default function HomePage() {
                 className="opacity-80 hover:opacity-100 transition-opacity"
               >
                 <Image
-                  src="/gambleaware.png"
+                  src="/GambleAware.webp"
                   alt="BeGambleAware"
                   width={120}
                   height={36}
@@ -286,7 +282,7 @@ export default function HomePage() {
                 className="opacity-80 hover:opacity-100 transition-opacity"
               >
                 <Image
-                  src="/gamcare.png"
+                  src="/GamCare.svg"
                   alt="GamCare"
                   width={90}
                   height={36}
@@ -295,14 +291,14 @@ export default function HomePage() {
                 />
               </a>
               <a
-                href="https://www.gamstop.co.uk"
+                href="https://www.gordonmoody.org.uk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="opacity-80 hover:opacity-100 transition-opacity"
               >
                 <Image
-                  src="/gamestop.png"
-                  alt="GamStop"
+                  src="/gordonmoody.png"
+                  alt="Gordon Moody"
                   width={80}
                   height={36}
                   className="object-contain"
@@ -352,6 +348,11 @@ export default function HomePage() {
                       Terms of Service
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/contact" className="text-xs" style={{ color: "rgba(232,232,240,0.5)" }}>
+                      Contact Us
+                    </Link>
+                  </li>
                 </ul>
               </div>
 
@@ -373,7 +374,7 @@ export default function HomePage() {
 
             <div className="section-divider mb-6" />
             <p className="text-center text-xs" style={{ color: "rgba(232,232,240,0.3)" }}>
-              © {YEAR} ukcasinopicks.com. For informational purposes only. All rights reserved.
+              © {YEAR} ukcasinopicks.org. For informational purposes only. All rights reserved.
             </p>
           </div>
         </footer>
