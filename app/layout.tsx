@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import GamblingWarningBar from "@/components/GamblingWarningBar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ukcasinopicks.org"),
@@ -35,8 +36,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body style={{ paddingBottom: "44px" }}>
         {children}
+        <GamblingWarningBar />
         <Analytics />
       </body>
     </html>

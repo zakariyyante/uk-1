@@ -141,27 +141,38 @@ export default function Footer() {
           </div>
 
           {/* Disclaimer (spans 2 cols) */}
-          <div className="col-span-2">
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#c9a84c" }}>
+          <div className="col-span-2 space-y-3">
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "#c9a84c" }}>
               Disclaimer
             </h4>
             <p className="text-xs leading-relaxed" style={{ color: "rgba(232,232,240,0.4)" }}>
-              UK Casino Picks is an independent comparison site. We may receive commission from casinos we list. 
-              All offers are subject to terms and conditions. Gambling involves risk — only gamble with money 
-              you can afford to lose. If gambling is affecting you or someone you know, contact the National 
-              Gambling Helpline:{" "}
-              <a
-                href="tel:08088020133"
-                style={{ color: "#c9a84c" }}
-                className="hover:underline"
-              >
-                0808 8020 133
-              </a>{" "}
-              (free, 24/7). For help and support visit{" "}
-              <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer" style={{ color: "#c9a84c" }} className="hover:underline">
-                BeGambleAware.org
-              </a>.
+              UK Casino Picks is an independent comparison site. We may receive commission from casinos we list.
+              All offers are subject to terms and conditions. New customers only. 18+.
             </p>
+            {/* Prominent gambling warning */}
+            <div
+              className="rounded-lg px-4 py-3 text-xs leading-relaxed"
+              style={{
+                background: "rgba(201,168,76,0.07)",
+                border: "1px solid rgba(201,168,76,0.3)",
+                color: "rgba(232,232,240,0.7)",
+              }}
+            >
+              <span className="font-bold" style={{ color: "#f5d27a" }}>⚠️ Gambling can harm you or those close to you.</span>
+              {" "}Call the National Gambling Helpline:{" "}
+              <a href="tel:08088020133" style={{ color: "#c9a84c" }} className="font-bold hover:underline">
+                0808 8020 133
+              </a>
+              {" "}(free, 24/7). Visit{" "}
+              <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer" style={{ color: "#c9a84c" }} className="font-bold hover:underline">
+                BeGambleAware.org
+              </a>
+              {" "}or{" "}
+              <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener noreferrer" style={{ color: "#c9a84c" }} className="font-bold hover:underline">
+                GamCare.org.uk
+              </a>
+              {" "}for free support.
+            </div>
           </div>
         </div>
 

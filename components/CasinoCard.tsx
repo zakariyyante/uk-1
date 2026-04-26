@@ -180,10 +180,36 @@ export default function CasinoCard({ casino, isOnline = true, rank = 1 }: Casino
           </span>
         </button>
 
-        {/* T&Cs */}
-        <p className="text-center text-xs leading-snug" style={{ color: "rgba(232,232,240,0.25)" }}>
-          New customers only. 18+. T&amp;Cs apply. BeGambleAware.org
-        </p>
+        {/* Gambling warning */}
+        <div
+          className="rounded-lg px-3 py-2 text-center text-xs leading-snug"
+          style={{
+            background: "rgba(201,168,76,0.05)",
+            border: "1px solid rgba(201,168,76,0.12)",
+            color: "rgba(232,232,240,0.45)",
+          }}
+        >
+          <span className="font-semibold" style={{ color: "rgba(245,210,122,0.7)" }}>⚠️ Gambling can be addictive.</span>
+          {" "}New customers only. 18+. T&amp;Cs apply.{" "}
+          <a
+            href="tel:08088020133"
+            style={{ color: "rgba(201,168,76,0.7)" }}
+            className="font-semibold"
+            onClick={(e) => e.stopPropagation()}
+          >
+            0808 8020 133
+          </a>
+          {" · "}
+          <a
+            href="https://www.begambleaware.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "rgba(201,168,76,0.7)" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            BeGambleAware.org
+          </a>
+        </div>
       </div>
     </a>
   );
